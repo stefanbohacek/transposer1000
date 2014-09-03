@@ -1,0 +1,65 @@
+/*
+	Custom colors, flat design style
+*/
+body {
+  background: #3e3e3e;
+  font-family: "Cutive Mono", sans-serif !important;
+  color: #f7f7f7;
+}
+nav h1 {
+  display: inline-block;
+  float: left;
+}
+nav p {
+  float: right;
+}
+nav {
+  position: relative;
+  margin-top: 0;
+}
+main {
+  display: block;
+}
+img {
+  max-width: 80%;
+}
+a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+#transposer-wrapper {
+  min-height: 100%;
+  margin: 2em 0;
+  text-align: center;
+}
+#transposer {
+  height: 444px;
+  width: 444px;
+  background: #037F8C;
+  border: 16px solid #0B2126;
+  -webkit-box-shadow: 0 0 30px #037F8C, 0 0 30px #000 inset;
+          box-shadow: 0 0 30px #037F8C, 0 0 30px #000 inset;
+  border-radius: 50%;
+  margin: 1em auto 3em;
+  cursor: pointer;
+  -webkit-transition: all 4.2s;
+          transition: all 4.2s;
+}
+.transposer-hover,
+#transposer:hover {
+  background: #A0F2EA;
+  border-color: #90e1d9;
+  -webkit-box-shadow: 0 0 130px #A0F2EA;
+          box-shadow: 0 0 130px #A0F2EA;
+  -webkit-transition: all 1s;
+          transition: all 1s;
+}
+.browsehappy {
+  margin: .2em 0;
+  background: #fad44c;
+  color: #f7f7f7;
+  padding: 5px;
+}
