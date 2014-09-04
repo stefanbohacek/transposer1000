@@ -29,7 +29,7 @@ def imgTranspose(im):
 	max_size = min(im.size[0], im.size[1])
 
 	for i in xrange(1, max_size, 1):
-#		if isPrime(i):
+		# if isPrime(i):
 		if doesItPass(i):
 			box = (0, i, im.size[0], im.size[1])
 			region = im.crop(box)
@@ -49,7 +49,7 @@ def index():
 
 @app.route('/service', methods=['POST'])
 def service():
-	#from pprint import pprint
+	# from pprint import pprint
 	info = jsonify(request.get_json(force=True))
 	image_data = request.json['content']['data']
 	image_data = [x.strip() for x in image_data.split(',')]
@@ -62,16 +62,16 @@ def service():
 	}
 
 	image_meta = request.json.get('meta', blank_meta)
-#	image_meta = request.json['meta']
+	# image_meta = request.json['meta']
 	im = Image.open(BytesIO(base64.b64decode(image_data[1])))
 	im = im.convert("RGBA")
 
-	#pprint (im.format, im.size, im.mode)
-	#pprint (im.size[0])
-	#pprint (im.size[1])
+	# pprint (im.format, im.size, im.mode)
+	# pprint (im.size[0])
+	# pprint (im.size[1])
 
 	im = imgTranspose(im)
-	#im.show()
+	# im.show()
 
 	import cStringIO
 	f = cStringIO.StringIO()
