@@ -7,7 +7,7 @@ Transposer 1000
 
 An example output is below:
 
-![Example](https://raw.githubusercontent.com/fourtonfish/transposer1000/master/example.jpg "Example")
+![Example](https://raw.githubusercontent.com/fourtonfish/transposer1000/master/static/images/thumbnail_640.jpg "Example")
 
 You can preview the service on this [test page](http://fourtonfish.com/imgapi/transposer1000/). The test page is in a more of a proof-of-concept state; only upload via drag and drop is supported and the page has been tested only in Chrome and Firefox on Ubuntu.
 
