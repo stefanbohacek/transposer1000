@@ -1,5 +1,4 @@
 $(document).ready(function(){
-
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') === this.pathname.replace(/^\//,'') && location.hostname === this.hostname) {
       var target = $(this.hash);
@@ -48,6 +47,7 @@ $(document).ready(function(){
       if (file.type.match(imageType)) {
         var reader = new FileReader();
         reader.onload = function(event) {
+          alert("WAIT.");
           $('html,body').animate({
             scrollTop: $("#dragged-image-preview").offset().top-70
           }, 1000);
@@ -72,7 +72,6 @@ $(document).ready(function(){
                 alert('DONE.');
                 console.log(data["content"]["data"]);
                 $("#dragged-image-preview").attr("src", data.content.data);
-
              },
              error: function(data)
              {
@@ -93,12 +92,9 @@ $(document).ready(function(){
             });
           };
           reader.readAsDataURL(file);
-
         } else {
           alert('NO.');
         }
       }
     }
-
-
   });
