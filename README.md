@@ -38,7 +38,7 @@ and
 gulp
 ```
 
-The Flask script will run at localhost:5000 and will be proxied to localhost:3000 with the browser-sync gulp.js plugin, which will also automatically open and reload the test page.
+The Flask script will run at localhost:5000 and will be proxied to localhost:3000 with the browser-sync gulp.js plugin, which will also automatically open the test page (and reload it if any of the relevant files change).
 
 If this is too complicated, have a look at [this repo](https://github.com/rozap/sweg.revisit) for another Flask-based revisit.link service blueprint. Chris, the author, also made [a very useful testing script](https://github.com/revisitors/revisit-test-util).
 
